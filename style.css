@@ -1,0 +1,82 @@
+h1, h2, h3, h4, p{
+    margin-block-start: 0;
+}
+
+ul, li {
+
+}
+
+body{
+    font-family: 'Kelly Slab', cursive;
+}
+
+.content{
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-template-areas:
+            "avatar info contacts"
+            "avatar info contacts";
+
+}
+
+.avatar{
+    display: grid;
+
+
+    grid-area: avatar;
+}
+
+.photo{
+    align-self: center;
+    justify-self: center;
+    height: 200px;
+}
+
+.info{
+
+    grid-area: info;
+    font-family: 'Kelly Slab', cursive;
+    text-align: center;
+
+}
+
+.text{
+    text-align: left;
+
+}
+
+
+
+.contacts{
+    grid-area: contacts;
+}
+
+.exp-item{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 10px;
+}
+
+.exp-data{
+
+}
+
+.exp-desc{
+
+}
+
+@media screen and (max-device-width: 720px) {
+    .content{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+        grid-template-areas:
+                "avatar"
+                "info"
+                "contacts"
+
+    }
+}
